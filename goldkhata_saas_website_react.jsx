@@ -215,6 +215,8 @@ export default function GoldKhataWebsite() {
 
           <div>
             <p>Package Name: com.goldkhata.app</p>
+            <p>Business Name: Mahesh kumar shinnurlar</p>
+            <p>Brand App Name: Goldkhata</p>
             <p>Platform: Android + Web</p>
             <p>© 2026 GoldKhata. All Rights Reserved.</p>
           </div>
