@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GoldKhata</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f6f1;
+    color:#222;
+    line-height:1.7;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-content{
+    max-width:950px;
+}
+
+.badge{
+    display:inline-block;
+    background:rgba(255,215,0,0.15);
+    border:1px solid rgba(255,215,0,0.3);
+    color:#ffd700;
+    padding:10px 22px;
+    border-radius:50px;
+    margin-bottom:25px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:72px;
+    color:white;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:22px;
+    color:#f0f0f0;
+    max-width:850px;
+    margin:auto;
+}
+
+.hero-buttons{
+    margin-top:40px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:14px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s ease;
+    margin:10px;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#d4a017,#b8860b);
+    color:white;
+    box-shadow:0 8px 24px rgba(212,160,23,0.4);
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:1px solid rgba(255,255,255,0.3);
+    color:white;
+    background:rgba(255,255,255,0.05);
+}
+
+.btn-secondary:hover{
+    background:rgba(255,255,255,0.12);
+}
+
+/* SECTION */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#b8860b;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#666;
+    font-size:18px;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:white;
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.06);
+    transition:0.3s ease;
+    border:1px solid #f1f1f1;
+}
+
+.feature-card:hover{
+    transform:translateY(-6px);
+}
+
+.feature-icon{
+    width:65px;
+    height:65px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#d4a017,#b8860b);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.feature-card h3{
+    color:#222;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.feature-card p{
+    color:#666;
+}
+
+/* LEGAL */
+
+.legal{
+    background:white;
+    border-radius:28px;
+    padding:45px;
+    margin-bottom:35px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.05);
+}
+
+.legal h2{
+    color:#b8860b;
+    margin-bottom:20px;
+}
+
+.legal ul{
+    padding-left:20px;
+}
+
+.legal li{
+    margin-bottom:12px;
+    color:#555;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#111;
+    color:#aaa;
+    padding:60px 20px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+.footer h3{
+    color:white;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.footer p{
+    margin-bottom:10px;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.08);
+    margin-top:40px;
+    padding-top:25px;
+    font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">
+Production-Grade Multi-Tenant SaaS Platform
+</div>
+
+<h1>GoldKhata</h1>
+
+<p>
+Modern loan & pawn management platform for lenders, jewellers and pawn-broking businesses.
+Manage gold, silver and personal loans digitally with automated workflows and analytics.
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn btn-primary"
+href="https://drive.usercontent.google.com/download?id=16fL0H1wbBjDvgIVYNkfAOZpxSg0V2xTn&export=download&confirm=t">
+Download APK
+</a>
+
+<a class="btn btn-secondary" href="#features">
+Explore Features
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="section" id="features">
+
+<div class="section-title">
+<h2>Core Features</h2>
+<p>Everything needed to run a modern lending & pawn business.</p>
+</div>
+
+<div class="features">
+
+<div class="feature-card">
+<div class="feature-icon">💰</div>
+<h3>Loan Management</h3>
+<p>Manage gold, silver and personal loans digitally with complete customer records.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">📈</div>
+<h3>Interest Automation</h3>
+<p>Automatic interest calculation, repayment tracking and settlement workflows.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">📒</div>
+<h3>Pawn Ledger</h3>
+<p>Track pledged jewellery and maintain complete customer loan history.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">📊</div>
+<h3>Reports & Analytics</h3>
+<p>Business reports, collections tracking and operational analytics.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">☁️</div>
+<h3>Multi-Tenant SaaS</h3>
+<p>Subscription-based SaaS architecture with secure tenant isolation.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🛠️</div>
+<h3>Super Admin Panel</h3>
+<p>Manage subscriptions, tenants and complete platform operations.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PRIVACY -->
+
+<section class="section">
+
+<div class="legal">
+
+<h2>Privacy Policy</h2>
+
+<p style="margin-bottom:20px;">
+GoldKhata is a SaaS business management platform for lenders, jewellers and pawn-broking businesses.
+</p>
+
+<ul>
+<li>Merchants may store customer names, mobile numbers and loan records.</li>
+<li>GoldKhata administrators do not routinely access merchant customer data.</li>
+<li>Payments may be processed using third-party payment providers such as Razorpay.</li>
+<li>Reasonable security measures are implemented to protect business information.</li>
+<li>Internet, storage and notification permissions may be used for operational functionality.</li>
+</ul>
+
+</div>
+
+<div class="legal">
+
+<h2>Terms & Conditions</h2>
+
+<ul>
+<li>GoldKhata provides business software tools and does not directly issue loans.</li>
+<li>Lending operations are independently managed by businesses using the platform.</li>
+<li>Users are responsible for lawful platform usage and account security.</li>
+<li>GoldKhata is not liable for banking delays or third-party payment failures.</li>
+</ul>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div>
+<h3>GoldKhata</h3>
+<p>Production-grade multi-tenant SaaS platform for modern loan & pawn businesses.</p>
+</div>
+
+<div>
+<p><strong>Brand App Name:</strong> GoldKhata</p>
+<p><strong>Business Name:</strong> Mahesh Kumar Shinnurkar</p>
+<p><strong>Package Name:</strong> com.goldkhata.app</p>
+
+<div>
+<p><strong>Contact:</strong> H2core</p>
+<p><strong>Address:</strong> Shop No. 11 Darshan Building, Jagat Main Road, Beside Post Office, Jagat Main Road, Kalaburagi, Karnataka</p>
+<p><strong>Mobile No:</strong> 9902519111 / 9740904547</p>
+</div>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 GoldKhata. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
